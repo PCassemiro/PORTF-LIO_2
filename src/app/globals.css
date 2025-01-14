@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container123 {
+  height: 100vh; /* Garante que o container ocupa a tela toda */
+  scroll-snap-type: y mandatory; /* Ativa o snap no eixo vertical */
+  overflow-y: scroll; /* Permite rolar suavemente */
+  scroll-behavior: smooth; /* Suaviza a rolagem */
+}
+
+.section {
+  height: 100vh; /* Cada seção ocupa uma tela inteira */
+  scroll-snap-align: start; /* A rolagem sempre parará no início da seção */
+}
