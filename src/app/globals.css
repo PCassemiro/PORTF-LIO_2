@@ -31,3 +31,7 @@ body {
   height: 100vh; /* Cada seção ocupa uma tela inteira */
   scroll-snap-align: start; /* A rolagem sempre parará no início da seção */
 }
+.text-stroke {
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px white;
+}

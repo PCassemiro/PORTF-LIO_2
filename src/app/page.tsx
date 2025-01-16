@@ -14,9 +14,9 @@ export default function HomePage() {
     // Geral
     <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-zinc-800">
       {/* Naver bar */}
-      <div className=" h-screen w-60 fixed flex right-0 border-l-2 border-black flex-col px-4 pt-10 gap-5 text-xl text-white items-start">
+      <div className=" h-screen w-60 fixed flex right-0 border-l-1 border-white flex-col px-4 pt-10 gap-5 text-xl text-white items-start">
         <Link href="#section1">
-          <Button className="bg-blue-500 text-white ">01.Topo</Button>
+          <Button className="bg-transparent text-white ">01.Topo</Button>
         </Link>
         <Link href="#section2">
           <Button className="bg-transparent text-white ">
@@ -60,7 +60,7 @@ export default function HomePage() {
         </Link>
       </div>
       {/* Geral sections */}
-      <div className="container mx-auto">
+      <div className="container mx-auto pr-56">
         {/* 01.Nome */}
         <section
           id="section1"
@@ -100,35 +100,49 @@ export default function HomePage() {
           {/* geral */}
           <div className="px-5 pt-5">
             <div>
-              <h1 className=" flex relative top-3 left-3">QUEM SOU EU</h1>
+              <h1 className=" flex relative top-3 left-3 pb-10">QUEM SOU EU</h1>
             </div>
             {/* Geral */}
             <div className="grid grid-cols-2">
               {/* Texto */}
               <div className="flex flex-col text-xl">
-                <li>Meu nome é Pedro de Oliveira Cassemiro;</li>
-                <li>
-                  Estudante de Sistemas de Informação no Centro Universitário
-                  FAESA, campus Vitória;
-                </li>
-                <li>Estagiário na Prefeitura de Cariacica;</li>
-                <li>
-                  Desde os 16 anos, tenho um profundo interesse pela área de
-                  Tecnologia da Informação;
-                </li>
-                <li>
-                  Motivado pela ampla gama de oportunidades e pela infinidade de
-                  possibilidades criativas que esta área oferece;
-                </li>
-                <li>
-                  O principal atrativo para min é o impacto significativo que a
-                  tecnologia tem no cotidiano das pessoas, evidenciando a sua
-                  importância fundamental em nossas vidas.
-                </li>
+                <h1>
+                  Meu nome é Pedro de Oliveira Cassemiro, sou estudante de
+                  Sistemas de Informação no Centro Universitário FAESA, campus
+                  Vitória. Atualmente, atuo como estagiário na Prefeitura de
+                  Cariacica, onde tenho a oportunidade de aplicar e expandir
+                  meus conhecimentos na área de Tecnologia da Informação. Desde
+                  os 16 anos, a tecnologia se tornou uma grande paixão na minha
+                  vida. O que mais me motiva nessa área é a sua ampla gama de
+                  oportunidades e as infinitas possibilidades criativas que ela
+                  proporciona. Além disso, acredito que a tecnologia tem um
+                  impacto significativo no cotidiano das pessoas, tornando-se
+                  essencial para a evolução da sociedade e a melhoria da
+                  qualidade de vida. Estou sempre em busca de aprendizado e
+                  inovação, explorando novas tendências e desafios dentro da TI.
+                  Para mim, essa área vai muito além de códigos e sistemas ela
+                  representa a construção do futuro e a transformação do mundo
+                  ao nosso redor.
+                </h1>
               </div>
-              {/* Imagem */}
-              <div>
-                <h1>teste</h1>
+              {/* Geral direita */}
+              <div className="border-1 border- mx-48 flex flex-col ">
+                <div className="pt-28">
+                  <h1 className="text-[250px] flex justify-center text-transparent relative inset-2 -mb-8 text-stroke">
+                    1
+                  </h1>
+                  <h1 className="text-[250px] flex justify-center text-transparent relative inset-1 -mb-8  text-stroke">
+                    1
+                  </h1>
+                  <h1 className="text-[250px] flex justify-center text-white relative">
+                    1
+                  </h1>
+                </div>
+                <div className="pt-20">
+                  <p className="text-sm flex justify-center">
+                    Ano de experiencia
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -136,11 +150,45 @@ export default function HomePage() {
         {/* 03.Meus serviços */}
         <section
           id="section3"
-          className="h-screen snap-start flex  text-white text-3xl"
+          className="h-screen snap-start flex flex-col  text-white text-3xl"
         >
-          <div>
-            <h1 className=" flex relative top-3 left-3">MEUS SERVIÇOS</h1>
-            <div className="bg-black my-3 w-full h-[2px]" />
+          {/* Geral */}
+          <div className="flex flex-col ">
+            <h1 className=" flex relative top-3 left-3 pb-10">MEUS SERVIÇOS</h1>
+          </div>
+          <div className="grid grid-cols-3 grid-rows gap-14 overflow-x-scroll w-full">
+            {/* Carde 1 */}
+            <div className="border-1">
+              <h1>UI/UX Design</h1>
+              <p>fluxo do usuário</p>
+              <p>wireframing </p>
+              <p>prototipagem</p>
+              <p>aplicativo mobile design</p>
+            </div>
+            {/* Carde 2 */}
+            <div className="border-1">
+              <h1>UI/UX Design</h1>
+              <p>fluxo do usuário</p>
+              <p>wireframing </p>
+              <p>prototipagem</p>
+              <p>aplicativo mobile design</p>
+            </div>
+            {/* Carde 3 */}
+            <div className="border-1">
+              <h1>UI/UX Design</h1>
+              <p>fluxo do usuário</p>
+              <p>wireframing </p>
+              <p>prototipagem</p>
+              <p>aplicativo mobile design</p>
+            </div>
+            {/* Carde 4 */}
+            <div className="border-1">
+              <h1>UI/UX Design</h1>
+              <p>fluxo do usuário</p>
+              <p>wireframing </p>
+              <p>prototipagem</p>
+              <p>aplicativo mobile design</p>
+            </div>
           </div>
         </section>
         {/*04.Habilidades */}
@@ -148,35 +196,35 @@ export default function HomePage() {
           id="section4"
           className="h-screen snap-start flex  text-white text-3xl"
         >
-          <h1 className=" flex relative top-3 left-3">HABILIDADES</h1>
+          <h1 className=" flex relative top-3 left-3 pb-10">HABILIDADES</h1>
         </section>
         {/*05.Curiosidades */}
         <section
           id="section5"
           className="h-screen snap-start flex  text-white text-3xl"
         >
-          <h1 className=" flex relative top-3 left-3">CURIOSIDADES</h1>
+          <h1 className=" flex relative top-3 left-3 pb-10">CURIOSIDADES</h1>
         </section>
         {/*06.Experiencia */}
         <section
           id="section6"
           className="h-screen snap-start flex  text-white text-3xl"
         >
-          <h1 className=" flex relative top-3 left-3">EXPERIÊNCIAS</h1>
+          <h1 className=" flex relative top-3 left-3 pb-10">EXPERIÊNCIAS</h1>
         </section>
         {/*07.Projetos */}
         <section
           id="section7"
           className="h-screen snap-start flex  text-white text-3xl"
         >
-          <h1 className=" flex relative top-3 left-3">MEUS PROJETOS</h1>
+          <h1 className=" flex relative top-3 left-3 pb-10">MEUS PROJETOS</h1>
         </section>
         {/*08.Meu processo de trabalho */}
         <section
           id="section8"
           className="h-screen snap-start flex  text-white text-3xl"
         >
-          <h1 className=" flex relative top-3 left-3">
+          <h1 className=" flex relative top-3 left-3 pb-10">
             MEU PROCESSO DE TRABALHO
           </h1>
         </section>
@@ -217,15 +265,24 @@ export default function HomePage() {
                 </div>
                 {/* 3 icone */}
                 <div className="flex flex-row gap-8 items-center">
-                  <h1 className="px-8">
+                  <Link
+                    className="px-8 text-white text-3xl"
+                    href="https://www.linkedin.com/home/?mcid=6821526239111716925&gclid=Cj0KCQiA-aK8BhCDARIsAL_-H9kPmsRUV13X13IHGOB5TZ3cIkJuJJMExjZVcba_6gnM516CXoiIcKYaArmvEALw_wcB&cid=&src=go-pa&gclsrc=aw%2Eds&gad_source=1&trk=sem-ga_campid%2E12619604099_asid%2E149519181115_crid%2E725790844702_kw%2Elinkedin_d%2Ec_tid%2Ekwd-148086543_n%2Eg_mt%2Ee_geo%2E9198492&originalSubdomain=br"
+                  >
                     <IoLogoLinkedin />
-                  </h1>
-                  <h1>
+                  </Link>
+                  <Link
+                    className="text-white text-3xl"
+                    href="https://github.com/"
+                  >
                     <FaGithub />
-                  </h1>
-                  <h1>
+                  </Link>
+                  <Link
+                    className="text-white text-3xl"
+                    href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dpt_BR"
+                  >
                     <FaFacebook />
-                  </h1>
+                  </Link>
                 </div>
               </div>
               {/* Contact me */}
@@ -234,41 +291,44 @@ export default function HomePage() {
                 <div>
                   <h1 className="py-14">Envie sua mensagem</h1>
                   {/* Cima */}
-                  <div className="flex flex-row">
-                    <div>
+                  <div className="grid grid-cols-2 ">
+                    <div className="m-2">
                       <h1>Nome</h1>
                       <input
                         type="text"
                         name="nome"
                         id="nome"
                         placeholder="Seu nome"
-                        className="bg-transparent text-sm"
+                        className="bg-transparent text-sm border-b-1 w-full"
                       />
-                      <hr />
                     </div>
-                    <div>
+                    <div className="m-2">
                       <h1>E-mail</h1>
                       <input
                         type="email"
                         name="email"
                         id="email"
                         placeholder="Seu e-mail"
-                        className="bg-transparent text-sm"
+                        className="bg-transparent text-sm border-b-1 w-full"
                       />
-                      <hr />
                     </div>
                   </div>
                   {/* Esquerda */}
-                  <div>
+                  <div className="m-2">
                     <h1>Mensagem</h1>
                     <input
                       type="text"
                       name="Mensagem"
                       id="Mensagem"
                       placeholder="Sua mensagem"
-                      className="bg-transparent text-sm"
+                      className="bg-transparent text-sm border-b-1 w-full"
                     />
-                    <hr />
+                  </div>
+                  {/* Botão */}
+                  <div className=" flex justify-center">
+                    <Button className="bg-zinc-900 rounded-full h-40 w-40 border-white border-1 mt-14">
+                      <h1 className="text-white">ENVIAR</h1>
+                    </Button>
                   </div>
                 </div>
               </div>
