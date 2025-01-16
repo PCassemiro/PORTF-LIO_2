@@ -3,6 +3,12 @@
 import { Button, Link } from "@nextui-org/react";
 // import { Image } from "@nextui-org/image";
 import Image from "next/image";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
+import { FaInstagram } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io";
+import { FaGithub } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
 export default function HomePage() {
   return (
     // Geral
@@ -10,7 +16,7 @@ export default function HomePage() {
       {/* Naver bar */}
       <div className=" h-screen w-60 fixed flex right-0 border-l-2 border-black flex-col px-4 pt-10 gap-5 text-xl text-white items-start">
         <Link href="#section1">
-          <Button className="bg-transparent text-white ">01.Topo</Button>
+          <Button className="bg-blue-500 text-white ">01.Topo</Button>
         </Link>
         <Link href="#section2">
           <Button className="bg-transparent text-white ">
@@ -95,12 +101,11 @@ export default function HomePage() {
           <div className="px-5 pt-5">
             <div>
               <h1 className=" flex relative top-3 left-3">QUEM SOU EU</h1>
-              <hr className="border-black my-3" />
             </div>
             {/* Geral */}
-            <div className="flex flex-row">
+            <div className="grid grid-cols-2">
               {/* Texto */}
-              <div className="flex flex-col">
+              <div className="flex flex-col text-xl">
                 <li>Meu nome é Pedro de Oliveira Cassemiro;</li>
                 <li>
                   Estudante de Sistemas de Informação no Centro Universitário
@@ -122,7 +127,9 @@ export default function HomePage() {
                 </li>
               </div>
               {/* Imagem */}
-              <div></div>
+              <div>
+                <h1>teste</h1>
+              </div>
             </div>
           </div>
         </section>
@@ -178,7 +185,95 @@ export default function HomePage() {
           id="section9"
           className="h-screen snap-start flex  text-white text-3xl"
         >
-          <h1 className=" flex relative top-3 left-3">CONTATOS</h1>
+          <div>
+            <h1 className=" flex relative top-3 left-3 bottom-10 pb-10">
+              CONTATOS
+            </h1>
+            {/* Geral */}
+            <div>
+              {/* Geral 2 */}
+              <div className="flex flex-row   ">
+                {/* 3 icone + texto */}
+                <div className="flex flex-row gap-4 ">
+                  <div className="flex flex-row gap-2">
+                    <BsFillTelephoneFill className="rounded-full h-14 w-14 border-1 p-4" />
+                    <h1 className="text-sm flex items-center">
+                      +55 27 99622-4126
+                    </h1>
+                  </div>
+
+                  <div className="flex flex-row gap-2">
+                    <HiOutlineMail className="rounded-full h-14 w-14 border-1 p-4" />
+                    <h1 className="text-sm flex items-center">
+                      pedrobr2909@gmail.com
+                    </h1>
+                  </div>
+                  <div className="flex flex-row gap-2">
+                    <FaInstagram className="rounded-full h-14 w-14 border-1 p-4" />
+                    <h1 className="text-sm flex items-center">
+                      pedro_cassemiro14
+                    </h1>
+                  </div>
+                </div>
+                {/* 3 icone */}
+                <div className="flex flex-row gap-8 items-center">
+                  <h1 className="px-8">
+                    <IoLogoLinkedin />
+                  </h1>
+                  <h1>
+                    <FaGithub />
+                  </h1>
+                  <h1>
+                    <FaFacebook />
+                  </h1>
+                </div>
+              </div>
+              {/* Contact me */}
+              <div>
+                {/* Geral */}
+                <div>
+                  <h1 className="py-14">Envie sua mensagem</h1>
+                  {/* Cima */}
+                  <div className="flex flex-row">
+                    <div>
+                      <h1>Nome</h1>
+                      <input
+                        type="text"
+                        name="nome"
+                        id="nome"
+                        placeholder="Seu nome"
+                        className="bg-transparent text-sm"
+                      />
+                      <hr />
+                    </div>
+                    <div>
+                      <h1>E-mail</h1>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Seu e-mail"
+                        className="bg-transparent text-sm"
+                      />
+                      <hr />
+                    </div>
+                  </div>
+                  {/* Esquerda */}
+                  <div>
+                    <h1>Mensagem</h1>
+                    <input
+                      type="text"
+                      name="Mensagem"
+                      id="Mensagem"
+                      placeholder="Sua mensagem"
+                      className="bg-transparent text-sm"
+                    />
+                    <hr />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
