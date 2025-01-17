@@ -9,6 +9,9 @@ import { FaInstagram } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";
 import { FaGithub } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
+import React from "react";
+import CircleRotation from "../app/CircleRotation";
+
 export default function HomePage() {
   return (
     // Geral
@@ -196,7 +199,49 @@ export default function HomePage() {
           id="section4"
           className="h-screen snap-start flex  text-white text-3xl"
         >
-          <h1 className=" flex relative top-3 left-3 pb-10">HABILIDADES</h1>
+          {/* Geral */}
+          <div>
+            <div>
+              <h1 className=" flex relative top-3 left-3 pb-10">HABILIDADES</h1>
+            </div>
+            {/* circulo e texto */}
+            <div className="grid grid-cols-2">
+              {/* Circulo */}
+              <div className="rounded-full border-1 h-96 w-96 flex items-center justify-center">
+                <div>
+                  {/* Habilidade 1 */}
+                  <div id="habilidade1" className="relative ">
+                    <h1>Python</h1>
+                  </div>
+                  {/* Habilidade 2 */}
+                  <div id="habilidade2" className="relative ">
+                    <h1>Java</h1>
+                  </div>
+                  {/* Habilidade 3 */}
+                  <div id="habilidade3" className="relative ">
+                    <h1>HTML</h1>
+                  </div>
+                </div>
+                <div className=" flex flex-col">
+                  {/* Habilidade 4 */}
+                  <div id="habilidade4" className="">
+                    <h1>CSS</h1>
+                  </div>
+                  {/* Habilidade 5 */}
+                  <div id="habilidade5" className=" ">
+                    <h1>Javascript</h1>
+                  </div>
+                  {/* Habilidade 6 */}
+                  <div id="habilidad6" className="relative ">
+                    <h1>SQL</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="flex justify-center items-center">
+                <CircleRotation />
+              </div>
+            </div>
+          </div>
         </section>
         {/*05.Curiosidades */}
         <section
@@ -258,7 +303,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex flex-row gap-2">
                     <FaInstagram className="rounded-full h-14 w-14 border-1 p-4" />
-                    <h1 className="text-sm flex items-center">
+                    <h1 className="text-sm flex items-center pr-6">
                       pedro_cassemiro14
                     </h1>
                   </div>
@@ -266,7 +311,7 @@ export default function HomePage() {
                 {/* 3 icone */}
                 <div className="flex flex-row gap-8 items-center">
                   <Link
-                    className="px-8 text-white text-3xl"
+                    className=" text-white text-3xl"
                     href="https://www.linkedin.com/home/?mcid=6821526239111716925&gclid=Cj0KCQiA-aK8BhCDARIsAL_-H9kPmsRUV13X13IHGOB5TZ3cIkJuJJMExjZVcba_6gnM516CXoiIcKYaArmvEALw_wcB&cid=&src=go-pa&gclsrc=aw%2Eds&gad_source=1&trk=sem-ga_campid%2E12619604099_asid%2E149519181115_crid%2E725790844702_kw%2Elinkedin_d%2Ec_tid%2Ekwd-148086543_n%2Eg_mt%2Ee_geo%2E9198492&originalSubdomain=br"
                   >
                     <IoLogoLinkedin />
