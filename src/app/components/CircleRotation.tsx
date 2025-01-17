@@ -1,3 +1,4 @@
+import { RefreshCw } from "lucide-react";
 import React, { useState } from "react";
 
 const CircleRotation = () => {
@@ -21,7 +22,7 @@ const CircleRotation = () => {
   };
 
   return (
-    <div className="relative w-52 h-52 flex items-center justify-center border-2 border-black rounded-full">
+    <div className="relative w-[62vh] h-[62vh] flex items-center justify-center border-2 border-black rounded-full">
       {/* Div que contém os elementos e gira */}
       <div
         className="absolute w-full h-full"
@@ -44,9 +45,9 @@ const CircleRotation = () => {
       {/* Botão no centro do círculo */}
       <button
         onClick={rotateCircle}
-        className="absolute w-12 h-12 bg-red-500 text-white flex items-center justify-center rounded-full shadow-lg"
+        className="absolute w-12 h-12 bg-zinc-900 text-white flex items-center justify-center rounded-full shadow-lg"
       >
-        🔄
+        <RefreshCw />
       </button>
     </div>
   );

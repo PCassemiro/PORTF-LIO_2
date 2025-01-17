@@ -9,15 +9,16 @@ import { FaInstagram } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";
 import { FaGithub } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
+import { ThumbsUp } from "lucide-react";
 import React from "react";
-import CircleRotation from "../app/CircleRotation";
+import CircleRotation from "./components/CircleRotation";
 
 export default function HomePage() {
   return (
     // Geral
     <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth bg-zinc-800">
       {/* Naver bar */}
-      <div className=" h-screen w-60 fixed flex right-0 border-l-1 border-white flex-col px-4 pt-10 gap-5 text-xl text-white items-start">
+      <div className=" h-screen w-60 fixed flex right-0 border-l-1 border-white flex-col px-4 pt-10 gap-5 text-xl items-start">
         <Link href="#section1">
           <Button className="bg-transparent text-white ">01.Topo</Button>
         </Link>
@@ -63,7 +64,7 @@ export default function HomePage() {
         </Link>
       </div>
       {/* Geral sections */}
-      <div className="container mx-auto pr-56">
+      <div className="container mx-auto pr-48">
         {/* 01.Nome */}
         <section
           id="section1"
@@ -103,7 +104,7 @@ export default function HomePage() {
           {/* geral */}
           <div className="px-5 pt-5">
             <div>
-              <h1 className=" flex relative top-3 left-3 pb-10">QUEM SOU EU</h1>
+              <h1 className=" flex relative top-3 left-3 pb-16">QUEM SOU EU</h1>
             </div>
             {/* Geral */}
             <div className="grid grid-cols-2">
@@ -202,43 +203,38 @@ export default function HomePage() {
           {/* Geral */}
           <div>
             <div>
-              <h1 className=" flex relative top-3 left-3 pb-10">HABILIDADES</h1>
+              <h1 className=" flex relative top-3 left-3 pb-16">HABILIDADES</h1>
             </div>
             {/* circulo e texto */}
             <div className="grid grid-cols-2">
               {/* Circulo */}
-              <div className="rounded-full border-1 h-96 w-96 flex items-center justify-center">
-                <div>
-                  {/* Habilidade 1 */}
-                  <div id="habilidade1" className="relative ">
-                    <h1>Python</h1>
-                  </div>
-                  {/* Habilidade 2 */}
-                  <div id="habilidade2" className="relative ">
-                    <h1>Java</h1>
-                  </div>
-                  {/* Habilidade 3 */}
-                  <div id="habilidade3" className="relative ">
-                    <h1>HTML</h1>
-                  </div>
-                </div>
-                <div className=" flex flex-col">
-                  {/* Habilidade 4 */}
-                  <div id="habilidade4" className="">
-                    <h1>CSS</h1>
-                  </div>
-                  {/* Habilidade 5 */}
-                  <div id="habilidade5" className=" ">
-                    <h1>Javascript</h1>
-                  </div>
-                  {/* Habilidade 6 */}
-                  <div id="habilidad6" className="relative ">
-                    <h1>SQL</h1>
-                  </div>
-                </div>
-              </div>
               <div className="flex justify-center items-center">
                 <CircleRotation />
+              </div>
+              <div className="">
+                <div className="flex flex-col items-end">
+                  <div className="flex flex-col items-center">
+                    <Image
+                      alt="NextUI hero Image"
+                      src="/image/python.webp"
+                      height={150}
+                      width={150}
+                      className="bg-white rounded-full border-gray-100 border-1"
+                    />
+                    <h1>Python </h1>
+                  </div>
+                  <p className="text-sm">
+                    Eu estudo Python porque é uma linguagem versátil e poderosa,
+                    amplamente usada em diversas áreas, como desenvolvimento
+                    web, automação, análise de dados e inteligência artificial.
+                    Além disso, sua sintaxe simples e intuitiva facilita o
+                    aprendizado e a escrita de código limpo. Com Python, posso
+                    criar desde pequenos scripts para automatizar tarefas até
+                    aplicações complexas. Também vejo muitas oportunidades de
+                    carreira para quem domina a linguagem, o que me motiva ainda
+                    mais a aprofundar meus conhecimentos.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -248,14 +244,68 @@ export default function HomePage() {
           id="section5"
           className="h-screen snap-start flex  text-white text-3xl"
         >
-          <h1 className=" flex relative top-3 left-3 pb-10">CURIOSIDADES</h1>
+          <div>
+            <h1 className=" flex relative top-3 left-3 pb-20">CURIOSIDADES</h1>
+            <div className="flex flex-col gap-48 ">
+              <div className="flex flex-row justify-end  gap-28">
+                <div className="flex flex-col">
+                  <p className="border-b-1 text-9xl">1</p>
+                  <h1>Projetos finalizados</h1>
+                </div>
+                <div className="flex flex-col">
+                  <p className="border-b-1 ">
+                    <ThumbsUp className=" h-32 w-32 text-sm" />
+                  </p>
+                  <h1>Clientes felizes</h1>
+                </div>
+              </div>
+              <div className="flex flex-row justify-start gap-28">
+                <div className="flex flex-col">
+                  <p className="border-b-1 text-9xl">200</p>
+                  <h1>Horas de trabalho</h1>
+                </div>
+                <div className="flex flex-col">
+                  <p className="border-b-1 text-9xl">800</p>
+                  <h1>Horas no spotify</h1>
+                </div>
+                <div className="flex flex-col">
+                  <p className="border-b-1 text-9xl">999+</p>
+                  <h1>copos de café tomados</h1>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         {/*06.Experiencia */}
         <section
           id="section6"
           className="h-screen snap-start flex  text-white text-3xl"
         >
-          <h1 className=" flex relative top-3 left-3 pb-10">EXPERIÊNCIAS</h1>
+          <div className="flex flex-col ">
+            <div>
+              <h1 className=" flex relative top-3 left-3 pb-10">
+                EXPERIÊNCIAS
+              </h1>
+            </div>
+            <div className="flex flex-col gap-8">
+              <div>
+                <p className="text-base">(2024-hoje)</p>
+                <h1>Estagiario</h1>
+                <p>
+                  estagiario da prefeitura de cariacica, com atuação na area de
+                  desenvolvimento da prefeitura de cariacica
+                </p>
+              </div>
+              <div>
+                <p className="text-base">(2019-2020)</p>
+                <h1>Menor aprendiz</h1>
+                <p>
+                  Menora aprendiz da technipFMC, com atuação na area
+                  administrativa
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
         {/*07.Projetos */}
         <section
@@ -269,9 +319,61 @@ export default function HomePage() {
           id="section8"
           className="h-screen snap-start flex  text-white text-3xl"
         >
-          <h1 className=" flex relative top-3 left-3 pb-10">
-            MEU PROCESSO DE TRABALHO
-          </h1>
+          <div className="flex flex-col">
+            <h1 className=" flex relative top-3 left-3 pb-10">
+              PROCESSO DE TRABALHO
+            </h1>
+            <div className="flex flex-row gap-4">
+              <div className=" w-full flex flex-col items-end  text-black">
+                <div className="flex flex-row">
+                  <p className="w-[80px] h-[80px] bg-white "></p>
+                </div>
+                <div className="flex flex-row">
+                  <p className="w-[80px] h-[80px]   bg-white"></p>
+                  <p
+                    id="tranparente"
+                    className="w-[80px] h-[80px]  bg-transparent"
+                  ></p>
+                </div>
+                <div className="flex flex-row">
+                  <p className="w-[80px] h-[80px]  bg-white"></p>
+                  <p
+                    id="tranparente"
+                    className="w-[160px] h-[80px]  bg-transparent"
+                  ></p>
+                </div>
+                <div className="flex flex-row">
+                  <p className="w-[80px] h-[80px]  bg-white"></p>
+                  <p
+                    id="tranparente"
+                    className="w-[240px] h-[80px]  bg-transparent"
+                  ></p>
+                </div>
+                <div className="flex flex-row">
+                  <p className="w-[80px] h-[80px]   bg-white"></p>
+                  <p
+                    id="tranparente"
+                    className="w-[320px] h-[80px]  bg-transparent"
+                  ></p>
+                </div>
+                <div className="flex flex-row hover:bg-black">
+                  <p className="w-[80px] h-[80px] hover:w-[80px]  bg-white"></p>
+                  <p
+                    id="tranparente"
+                    className="w-[400px] h-[80px]  bg-transparent"
+                  ></p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-y-12 w-full  text-transparent">
+                <p>06. Lançamento</p>
+                <p>05. Revisão</p>
+                <p>04. Desenvolvimento</p>
+                <p>03. Design</p>
+                <p>02. Modelagem</p>
+                <p>01. Ideia</p>
+              </div>
+            </div>
+          </div>
         </section>
         {/*09*.Contatos */}
         <section
