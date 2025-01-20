@@ -11,7 +11,8 @@ import { FaGithub } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { ThumbsUp } from "lucide-react";
 import React from "react";
-import CircleRotation from "./components/CircleRotation";
+
+import { motion } from "framer-motion";
 
 export default function HomePage() {
   return (
@@ -73,20 +74,38 @@ export default function HomePage() {
           {/* Apresentação */}
           <div className=" px-5 pt-5">
             <p className="text-2xl">Ola, sou</p>
-            <h1 className="text-9xl">
-              Pedro
-              <br />
-              de Oliveira
-              <br />
-              Cassemiro
-            </h1>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {
+                  scale: 0.8,
+                  opacity: 0,
+                },
+                visible: {
+                  scale: 1,
+                  opacity: 1,
+                  transition: {
+                    delay: 0.4,
+                  },
+                },
+              }}
+            >
+              <h1 className="text-9xl">
+                Pedro
+                <br />
+                de Oliveira
+                <br />
+                Cassemiro
+              </h1>
+            </motion.div>
             <p className="text-3xl">
               Desenvolvedor <b className="text-amber-800">frontend</b>
             </p>
             <p className="text-2xl text-blue-500">Buscando evoluir sempre </p>
           </div>
           {/* Imagem */}
-          <div className="x">
+          <div className="">
             <Image
               alt="NextUI hero Image"
               src="/image/avatar.png"
@@ -130,12 +149,12 @@ export default function HomePage() {
                 </h1>
               </div>
               {/* Geral direita */}
-              <div className="border-1 border- mx-48 flex flex-col ">
+              <div className="border-1 border- mx-36 flex flex-col ">
                 <div className="pt-28">
-                  <h1 className="text-[250px] flex justify-center text-transparent relative inset-2 -mb-8 text-stroke">
+                  <h1 className="text-[248px] flex justify-center text-transparent relative inset-2 -mb-8 text-stroke">
                     1
                   </h1>
-                  <h1 className="text-[250px] flex justify-center text-transparent relative inset-1 -mb-8  text-stroke">
+                  <h1 className="text-[248px] flex justify-center text-transparent relative inset-1 -mb-8  text-stroke">
                     1
                   </h1>
                   <h1 className="text-[250px] flex justify-center text-white relative">
@@ -206,36 +225,16 @@ export default function HomePage() {
               <h1 className=" flex relative top-3 left-3 pb-16">HABILIDADES</h1>
             </div>
             {/* circulo e texto */}
-            <div className="grid grid-cols-2">
+            <div className="">
               {/* Circulo */}
-              <div className="flex justify-center items-center">
-                <CircleRotation />
-              </div>
-              <div className="">
-                <div className="flex flex-col items-end">
-                  <div className="flex flex-col items-center">
-                    <Image
-                      alt="NextUI hero Image"
-                      src="/image/python.webp"
-                      height={150}
-                      width={150}
-                      className="bg-white rounded-full border-gray-100 border-1"
-                    />
-                    <h1>Python </h1>
-                  </div>
-                  <p className="text-sm">
-                    Eu estudo Python porque é uma linguagem versátil e poderosa,
-                    amplamente usada em diversas áreas, como desenvolvimento
-                    web, automação, análise de dados e inteligência artificial.
-                    Além disso, sua sintaxe simples e intuitiva facilita o
-                    aprendizado e a escrita de código limpo. Com Python, posso
-                    criar desde pequenos scripts para automatizar tarefas até
-                    aplicações complexas. Também vejo muitas oportunidades de
-                    carreira para quem domina a linguagem, o que me motiva ainda
-                    mais a aprofundar meus conhecimentos.
-                  </p>
-                </div>
-              </div>
+              <div className="flex"></div>
+              <Image
+                alt="NextUI hero Image"
+                src="/image/habilidade.png"
+                height={350}
+                width={350}
+                className=""
+              />
             </div>
           </div>
         </section>
@@ -287,7 +286,7 @@ export default function HomePage() {
                 EXPERIÊNCIAS
               </h1>
             </div>
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-6">
               <div>
                 <p className="text-base">(2024-hoje)</p>
                 <h1>Estagiario</h1>
@@ -312,7 +311,26 @@ export default function HomePage() {
           id="section7"
           className="h-screen snap-start flex  text-white text-3xl"
         >
-          <h1 className=" flex relative top-3 left-3 pb-10">MEUS PROJETOS</h1>
+          {/* GERAL */}
+          <div className="flex flex-col">
+            <div>
+              <h1 className=" flex relative top-3 left-3 pb-10">
+                MEUS PROJETOS
+              </h1>
+            </div>
+            {/* Projeto 1 */}
+            <div>
+              <Image
+                alt="NextUI hero Image"
+                src="/image/projeto_iamedica.png"
+                height={350}
+                width={350}
+                className="bg-white "
+              />
+              <h1>IA médica</h1>
+              <p className="text-lg">design-frontend</p>
+            </div>
+          </div>
         </section>
         {/*08.Meu processo de trabalho */}
         <section
