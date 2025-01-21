@@ -10,6 +10,8 @@ import { IoLogoLinkedin } from "react-icons/io";
 import { FaGithub } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { ThumbsUp } from "lucide-react";
+import { Code } from "lucide-react";
+import { CodeXml } from "lucide-react";
 import React from "react";
 
 import { motion } from "framer-motion";
@@ -220,21 +222,74 @@ export default function HomePage() {
           className="h-screen snap-start flex  text-white text-3xl"
         >
           {/* Geral */}
-          <div>
-            <div>
-              <h1 className=" flex relative top-3 left-3 pb-16">HABILIDADES</h1>
-            </div>
-            {/* circulo e texto */}
-            <div className="">
-              {/* Circulo */}
-              <div className="flex"></div>
-              <Image
-                alt="NextUI hero Image"
-                src="/image/habilidade.png"
-                height={350}
-                width={350}
-                className=""
-              />
+
+          <div className="flex-col">
+            <h1 className=" flex relative top-3 left-3 pb-16">HABILIDADES</h1>
+
+            <div className="grid grid-cols-3">
+              {/* Habilidade 1 */}
+              <div className="flex flex-col h-full gap-48">
+                <div>
+                  <p className="flex flex-row gap-2">
+                    <Code />
+                    Html
+                  </p>
+                  <p className="text-lg">itermediario</p>
+                </div>
+
+                <div>
+                  <p className="flex flex-row gap-2">
+                    <Code />
+                    CSS
+                  </p>
+                  <p className="text-lg">itermediario</p>
+                </div>
+
+                <div>
+                  <p className="flex flex-row gap-2">
+                    <Code />
+                    Javascript
+                  </p>
+                  <p className="text-lg">itermediario</p>
+                </div>
+              </div>
+              {/* imagem */}
+              <div className=" flex items-end h-screen relative bottom-36">
+                <Image
+                  alt="NextUI hero Image"
+                  src="/image/plataforma.png"
+                  height={350}
+                  width={350}
+                  className=" "
+                />
+              </div>
+
+              {/* Habilidade 2 */}
+              <div className="flex flex-col h-full gap-48 items-end">
+                <div>
+                  <p className="flex flex-row gap-2">
+                    <CodeXml />
+                    Java
+                  </p>
+                  <p className="text-lg">itermediario</p>
+                </div>
+
+                <div>
+                  <p className="flex flex-row gap-2">
+                    <CodeXml />
+                    Python
+                  </p>
+                  <p className="text-lg">itermediario</p>
+                </div>
+
+                <div>
+                  <p className="flex flex-row gap-2">
+                    <CodeXml />
+                    SQL
+                  </p>
+                  <p className="text-lg">itermediario</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
