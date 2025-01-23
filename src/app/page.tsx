@@ -85,7 +85,7 @@ export default function HomePage() {
                   scale: 1,
                   opacity: 1,
                   transition: {
-                    delay: 0.4,
+                    delay: 0.5, // Animação do título termina antes das próximas
                   },
                 },
               }}
@@ -179,77 +179,157 @@ export default function HomePage() {
         >
           {/* Geral */}
 
-          <div className="flex-col">
+          <motion.div className="flex-col">
             <h1 className=" flex relative top-3 left-3 pb-16 text-blue-500">
               HABILIDADES
             </h1>
 
-            <div className="grid grid-cols-3">
+            <motion.div
+              className="grid grid-cols-2
+          "
+            >
               {/* Habilidade 1 */}
-              <div className="flex flex-col h-full gap-48 px-4">
-                <div>
+              <motion.div
+                className="flex flex-col h-full gap-48 px-4"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={{
+                  hidden: { opacity: 0, y: 50 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      staggerChildren: 0.2,
+                      delayChildren: 0.2,
+                    },
+                  },
+                }}
+              >
+                {/* Cada filho agora é um motion.div com animações */}
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 50 }, // Começa invisível e deslocado para baixo
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.5 },
+                    }, // Anima para visível
+                  }}
+                >
                   <p className="flex flex-row gap-2 text-orange-500">
                     <Code className="text-white" />
                     Html
                   </p>
-                  <p className="text-lg text-orange-500">itermediario</p>
-                </div>
+                  <p className="text-lg text-orange-500">intermediario</p>
+                </motion.div>
 
-                <div>
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.5 },
+                    },
+                  }}
+                >
                   <p className="flex flex-row gap-2 text-blue-500">
                     <Code className="text-white" />
                     CSS
                   </p>
-                  <p className="text-lg text-blue-500">itermediario</p>
-                </div>
+                  <p className="text-lg text-blue-500">intermediario</p>
+                </motion.div>
 
-                <div>
-                  <p className="flex flex-row gap-2  text-yellow-300">
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.5 },
+                    },
+                  }}
+                >
+                  <p className="flex flex-row gap-2 text-yellow-300">
                     <Code className="text-white" />
                     Javascript
                   </p>
-                  <p className="text-lg  text-yellow-300">itermediario</p>
-                </div>
-              </div>
-              {/* imagem */}
-              <div className=" flex items-end h-screen relative bottom-36">
-                <Image
-                  alt="NextUI hero Image"
-                  src="/image/plataforma.png"
-                  height={350}
-                  width={350}
-                  className=" "
-                />
-              </div>
+                  <p className="text-lg text-yellow-300">intermediario</p>
+                </motion.div>
+              </motion.div>
 
-              {/* Habilidade 2 */}
-              <div className="flex flex-col h-full gap-48 items-end">
-                <div>
+              {/* Segunda coluna */}
+              <motion.div
+                className="flex flex-col h-full gap-48 px-4"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={{
+                  hidden: { opacity: 0, y: 50 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      staggerChildren: 0.2,
+                      delayChildren: 0.2,
+                    },
+                  },
+                }}
+              >
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.5 },
+                    },
+                  }}
+                >
                   <p className="flex flex-row gap-2 text-red-600">
                     <CodeXml className="text-white" />
                     Java
                   </p>
-                  <p className="text-lg text-blue-500">itermediario</p>
-                </div>
+                  <p className="text-lg text-blue-500">intermediario</p>
+                </motion.div>
 
-                <div>
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.5 },
+                    },
+                  }}
+                >
                   <p className="flex flex-row gap-2 text-blue-500">
                     <CodeXml className="text-white" />
                     Python
                   </p>
-                  <p className="text-lg text-yellow-300">itermediario</p>
-                </div>
+                  <p className="text-lg text-yellow-300">intermediario</p>
+                </motion.div>
 
-                <div>
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.5 },
+                    },
+                  }}
+                >
                   <p className="flex flex-row gap-2 text-orange-500">
                     <CodeXml className="text-white" />
                     SQL
                   </p>
-                  <p className="text-lg text-blue-500">itermediario</p>
-                </div>
-              </div>
-            </div>
-          </div>
+                  <p className="text-lg text-blue-500">intermediario</p>
+                </motion.div>
+              </motion.div>
+            </motion.div>
+          </motion.div>
         </section>
         {/*04.Curiosidades */}
         <section
