@@ -31,43 +31,39 @@ export default function HomePage() {
           </Button>
         </Link>
         <Link href="#section3">
-          <Button className="bg-transparent text-white">
-            03. Meus serviços
+          <Button className="bg-transparent text-white ">
+            03. Habilidades
           </Button>
         </Link>
+
         <Link href="#section4">
           <Button className="bg-transparent text-white ">
-            04. Habilidades
+            04. Curiosidades
           </Button>
         </Link>
         <Link href="#section5">
           <Button className="bg-transparent text-white ">
-            05. Curiosidades
+            05. Experiência
           </Button>
         </Link>
         <Link href="#section6">
           <Button className="bg-transparent text-white ">
-            06. Experiência
+            06. Meus projetos
           </Button>
         </Link>
         <Link href="#section7">
           <Button className="bg-transparent text-white ">
-            07. Meus projetos
+            07. Processo de trabalho
           </Button>
         </Link>
         <Link href="#section8">
           <Button className="bg-transparent text-white ">
-            08. Processo de trabalho
-          </Button>
-        </Link>
-        <Link href="#section9">
-          <Button className="bg-transparent text-white ">
-            09. Meus Contatos
+            08. Meus Contatos
           </Button>
         </Link>
       </div>
       {/* Geral sections */}
-      <div className="container mx-auto pr-60">
+      <div className="container mx-auto pr-60 px-5">
         {/*arrumar paar pegar em qualquer pc */}
         {/* 01.Nome */}
         <section
@@ -126,7 +122,9 @@ export default function HomePage() {
           {/* geral */}
           <div className="px-5 pt-5">
             <div>
-              <h1 className=" flex relative top-3 left-3 pb-16">QUEM SOU EU</h1>
+              <h1 className=" flex relative top-3 left-3 pb-16    text-blue-500">
+                QUEM SOU EU
+              </h1>
             </div>
             {/* Geral */}
             <div className="grid grid-cols-2">
@@ -173,59 +171,18 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        {/* 03.Meus serviços */}
+
+        {/*03.Habilidades */}
         <section
           id="section3"
-          className="h-screen snap-start flex flex-col  text-white text-3xl"
-        >
-          {/* Geral */}
-          <div className="flex flex-col ">
-            <h1 className=" flex relative top-3 left-3 pb-10">MEUS SERVIÇOS</h1>
-          </div>
-          <div className="grid grid-cols-3 grid-rows gap-14 overflow-x-scroll w-full">
-            {/* Carde 1 */}
-            <div className="border-1">
-              <h1>UI/UX Design</h1>
-              <p>fluxo do usuário</p>
-              <p>wireframing </p>
-              <p>prototipagem</p>
-              <p>aplicativo mobile design</p>
-            </div>
-            {/* Carde 2 */}
-            <div className="border-1">
-              <h1>UI/UX Design</h1>
-              <p>fluxo do usuário</p>
-              <p>wireframing </p>
-              <p>prototipagem</p>
-              <p>aplicativo mobile design</p>
-            </div>
-            {/* Carde 3 */}
-            <div className="border-1">
-              <h1>UI/UX Design</h1>
-              <p>fluxo do usuário</p>
-              <p>wireframing </p>
-              <p>prototipagem</p>
-              <p>aplicativo mobile design</p>
-            </div>
-            {/* Carde 4 */}
-            <div className="border-1">
-              <h1>UI/UX Design</h1>
-              <p>fluxo do usuário</p>
-              <p>wireframing </p>
-              <p>prototipagem</p>
-              <p>aplicativo mobile design</p>
-            </div>
-          </div>
-        </section>
-        {/*04.Habilidades */}
-        <section
-          id="section4"
           className="h-screen snap-start flex  text-white text-3xl"
         >
           {/* Geral */}
 
           <div className="flex-col">
-            <h1 className=" flex relative top-3 left-3 pb-16">HABILIDADES</h1>
+            <h1 className=" flex relative top-3 left-3 pb-16 text-blue-500">
+              HABILIDADES
+            </h1>
 
             <div className="grid grid-cols-3">
               {/* Habilidade 1 */}
@@ -294,13 +251,15 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        {/*05.Curiosidades */}
+        {/*04.Curiosidades */}
         <section
-          id="section5"
+          id="section4"
           className="h-screen snap-start flex  text-white text-3xl"
         >
           <div>
-            <h1 className=" flex relative top-3 left-3 pb-20">CURIOSIDADES</h1>
+            <h1 className=" flex relative top-3 left-3 pb-20 text-blue-500">
+              CURIOSIDADES
+            </h1>
             <div className="flex flex-col gap-48 ">
               <div className="flex flex-row justify-end  gap-28">
                 <div className="flex flex-col">
@@ -331,14 +290,14 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        {/*06.Experiencia */}
+        {/*05.Experiencia */}
         <section
-          id="section6"
+          id="section5"
           className="h-screen snap-start flex  text-white text-3xl"
         >
           <div className="flex flex-col ">
             <div>
-              <h1 className=" flex relative top-3 left-3 pb-10">
+              <h1 className=" flex relative top-3 left-3 pb-10 text-blue-500">
                 EXPERIÊNCIAS
               </h1>
             </div>
@@ -362,15 +321,15 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        {/*07.Projetos */}
+        {/*06.Projetos */}
         <section
-          id="section7"
+          id="section6"
           className="h-screen snap-start flex  text-white text-3xl"
         >
           {/* GERAL */}
           <div className="flex flex-col">
             <div>
-              <h1 className=" flex relative top-3 left-3 pb-10">
+              <h1 className=" flex relative top-3 left-3 pb-10 text-blue-500">
                 MEUS PROJETOS
               </h1>
             </div>
@@ -388,13 +347,13 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        {/*08.Meu processo de trabalho */}
+        {/*07.Meu processo de trabalho */}
         <section
-          id="section8"
+          id="section7"
           className="h-screen snap-start flex  text-white text-3xl"
         >
           <div className="flex flex-col">
-            <h1 className=" flex relative top-3 left-3 pb-10">
+            <h1 className=" flex relative top-3 left-3 pb-10 text-blue-500">
               PROCESSO DE TRABALHO
             </h1>
             <div className="flex flex-row gap-4">
@@ -449,13 +408,13 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        {/*09*.Contatos */}
+        {/*08*.Contatos */}
         <section
-          id="section9"
+          id="section8"
           className="h-screen snap-start flex  text-white text-3xl"
         >
           <div>
-            <h1 className=" flex relative top-3 left-3 bottom-10 pb-10">
+            <h1 className=" flex relative top-3 left-3 bottom-10 pb-10 text-blue-500">
               CONTATOS
             </h1>
             {/* Geral */}
