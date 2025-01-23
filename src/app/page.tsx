@@ -67,7 +67,8 @@ export default function HomePage() {
         </Link>
       </div>
       {/* Geral sections */}
-      <div className="container mx-auto pr-48">
+      <div className="container mx-auto pr-60">
+        {/*arrumar paar pegar em qualquer pc */}
         {/* 01.Nome */}
         <section
           id="section1"
@@ -228,29 +229,29 @@ export default function HomePage() {
 
             <div className="grid grid-cols-3">
               {/* Habilidade 1 */}
-              <div className="flex flex-col h-full gap-48">
+              <div className="flex flex-col h-full gap-48 px-4">
                 <div>
-                  <p className="flex flex-row gap-2">
-                    <Code />
+                  <p className="flex flex-row gap-2 text-orange-500">
+                    <Code className="text-white" />
                     Html
                   </p>
-                  <p className="text-lg">itermediario</p>
+                  <p className="text-lg text-orange-500">itermediario</p>
                 </div>
 
                 <div>
-                  <p className="flex flex-row gap-2">
-                    <Code />
+                  <p className="flex flex-row gap-2 text-blue-500">
+                    <Code className="text-white" />
                     CSS
                   </p>
-                  <p className="text-lg">itermediario</p>
+                  <p className="text-lg text-blue-500">itermediario</p>
                 </div>
 
                 <div>
-                  <p className="flex flex-row gap-2">
-                    <Code />
+                  <p className="flex flex-row gap-2  text-yellow-300">
+                    <Code className="text-white" />
                     Javascript
                   </p>
-                  <p className="text-lg">itermediario</p>
+                  <p className="text-lg  text-yellow-300">itermediario</p>
                 </div>
               </div>
               {/* imagem */}
@@ -267,27 +268,27 @@ export default function HomePage() {
               {/* Habilidade 2 */}
               <div className="flex flex-col h-full gap-48 items-end">
                 <div>
-                  <p className="flex flex-row gap-2">
-                    <CodeXml />
+                  <p className="flex flex-row gap-2 text-red-600">
+                    <CodeXml className="text-white" />
                     Java
                   </p>
-                  <p className="text-lg">itermediario</p>
+                  <p className="text-lg text-blue-500">itermediario</p>
                 </div>
 
                 <div>
-                  <p className="flex flex-row gap-2">
-                    <CodeXml />
+                  <p className="flex flex-row gap-2 text-blue-500">
+                    <CodeXml className="text-white" />
                     Python
                   </p>
-                  <p className="text-lg">itermediario</p>
+                  <p className="text-lg text-yellow-300">itermediario</p>
                 </div>
 
                 <div>
-                  <p className="flex flex-row gap-2">
-                    <CodeXml />
+                  <p className="flex flex-row gap-2 text-orange-500">
+                    <CodeXml className="text-white" />
                     SQL
                   </p>
-                  <p className="text-lg">itermediario</p>
+                  <p className="text-lg text-blue-500">itermediario</p>
                 </div>
               </div>
             </div>
