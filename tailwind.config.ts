@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Montserrat"', "sans-serif"], // Define como padrão para 'font-sans'
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
