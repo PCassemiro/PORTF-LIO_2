@@ -73,7 +73,7 @@ export default function HomePage() {
           {/* Apresentação */}
           <div className=" px-5 pt-5">
             <p className="text-2xl">Ola, sou</p>
-            <motion.div
+            <motion.span
               initial="hidden"
               animate="visible"
               variants={{
@@ -85,6 +85,7 @@ export default function HomePage() {
                   scale: 1,
                   opacity: 1,
                   transition: {
+                    staggerChildren: 0.3,
                     delay: 0.5, // Animação do título termina antes das próximas
                   },
                 },
@@ -97,7 +98,7 @@ export default function HomePage() {
                 <br />
                 Cassemiro
               </h1>
-            </motion.div>
+            </motion.span>
             <p className="text-3xl">
               Desenvolvedor <b className="text-amber-800">frontend</b>
             </p>
@@ -185,7 +186,7 @@ export default function HomePage() {
             </h1>
 
             <motion.div
-              className="grid grid-cols-2
+              className="grid grid-cols-3
           "
             >
               {/* Habilidade 1 */}
@@ -223,14 +224,13 @@ export default function HomePage() {
                   </p>
                   <p className="text-lg text-orange-500">intermediario</p>
                 </motion.div>
-
                 <motion.div
                   variants={{
                     hidden: { opacity: 0, y: 50 },
                     visible: {
                       opacity: 1,
                       y: 0,
-                      transition: { duration: 0.5 },
+                      transition: { delay: 0.5, duration: 0.5 },
                     },
                   }}
                 >
@@ -240,28 +240,38 @@ export default function HomePage() {
                   </p>
                   <p className="text-lg text-blue-500">intermediario</p>
                 </motion.div>
-
                 <motion.div
                   variants={{
                     hidden: { opacity: 0, y: 50 },
                     visible: {
                       opacity: 1,
                       y: 0,
-                      transition: { duration: 0.5 },
+                      transition: { delay: 1.0, duration: 0.5 },
                     },
                   }}
                 >
                   <p className="flex flex-row gap-2 text-yellow-300">
                     <Code className="text-white" />
-                    Javascript
+                    Javascrip/
+                    <br />
+                    typescript
                   </p>
                   <p className="text-lg text-yellow-300">intermediario</p>
                 </motion.div>
               </motion.div>
+              <motion.div className="w-full">
+                <Image
+                  alt="foco"
+                  src={"/image/habilidad.png"}
+                  height={900}
+                  width={900}
+                  className="flex  h-96 justify-end w-96 rounded-full"
+                />
+              </motion.div>
 
               {/* Segunda coluna */}
               <motion.div
-                className="flex flex-col h-full gap-48 px-4"
+                className="flex flex-col h-full gap-48 px-4 items-end"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
@@ -283,7 +293,7 @@ export default function HomePage() {
                     visible: {
                       opacity: 1,
                       y: 0,
-                      transition: { duration: 0.5 },
+                      transition: { delay: 1.5, duration: 0.5 },
                     },
                   }}
                 >
@@ -300,7 +310,7 @@ export default function HomePage() {
                     visible: {
                       opacity: 1,
                       y: 0,
-                      transition: { duration: 0.5 },
+                      transition: { delay: 2.0, duration: 0.5 },
                     },
                   }}
                 >
@@ -308,7 +318,7 @@ export default function HomePage() {
                     <CodeXml className="text-white" />
                     Python
                   </p>
-                  <p className="text-lg text-yellow-300">intermediario</p>
+                  <p className="text-lg text-yellow-300">basico</p>
                 </motion.div>
 
                 <motion.div
@@ -317,7 +327,7 @@ export default function HomePage() {
                     visible: {
                       opacity: 1,
                       y: 0,
-                      transition: { duration: 0.5 },
+                      transition: { delay: 2.5, duration: 0.5 },
                     },
                   }}
                 >
