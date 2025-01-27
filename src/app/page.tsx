@@ -12,9 +12,14 @@ import { FaFacebook } from "react-icons/fa";
 import { ThumbsUp } from "lucide-react";
 import { Code } from "lucide-react";
 import { CodeXml } from "lucide-react";
+
+import { Typewriter } from "../app/components/Typewriter";
+
 import React from "react";
 
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
+import HtmlRenderer from "@/utils";
+import { text } from "stream/consumers";
 
 export default function HomePage() {
   return (
@@ -73,37 +78,18 @@ export default function HomePage() {
           {/* Apresentação */}
           <div className=" px-5 pt-5">
             <p className="text-2xl">Ola, sou</p>
-            <motion.span
-              initial="hidden"
-              animate="visible"
-              variants={{
-                hidden: {
-                  scale: 0.8,
-                  opacity: 0,
-                },
-                visible: {
-                  scale: 1,
-                  opacity: 1,
-                  transition: {
-                    staggerChildren: 0.3,
-                    delay: 0.5, // Animação do título termina antes das próximas
-                  },
-                },
-              }}
-            >
-              <h1 className="text-9xl">
-                Pedro
-                <br />
-                de Oliveira
-                <br />
-                Cassemiro
-              </h1>
-            </motion.span>
+
+            <div className="text-9xl">
+              <Typewriter text={"Pedro"} />
+              <Typewriter text={"De Oliveira"} />
+              <Typewriter text={"Cassemiro"} />
+            </div>
             <p className="text-3xl">
               Desenvolvedor <b className="text-amber-800">frontend</b>
             </p>
             <p className="text-2xl text-blue-500">Buscando evoluir sempre </p>
           </div>
+
           {/* Imagem */}
           <div className="">
             <Image
@@ -252,9 +238,7 @@ export default function HomePage() {
                 >
                   <p className="flex flex-row gap-2 text-yellow-300">
                     <Code className="text-white" />
-                    Javascrip/
-                    <br />
-                    typescript
+                    Javascrip/typescript
                   </p>
                   <p className="text-lg text-yellow-300">intermediario</p>
                 </motion.div>
@@ -262,10 +246,10 @@ export default function HomePage() {
               <motion.div className="w-full">
                 <Image
                   alt="foco"
-                  src={"/image/habilidad.png"}
+                  src={"/image/computador.png"}
                   height={900}
                   width={900}
-                  className="flex  h-96 justify-end w-96 rounded-full"
+                  className="flex  h-96 flex-col  w-96 "
                 />
               </motion.div>
 
