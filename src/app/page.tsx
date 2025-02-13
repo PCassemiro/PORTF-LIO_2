@@ -1,25 +1,18 @@
 "use client";
-
+import { Code, CodeXml, ThumbsUp } from "lucide-react";
 import { Button, Link } from "@nextui-org/react";
-// import { Image } from "@nextui-org/image";
-import Image from "next/image";
+import { Image } from "@nextui-org/image";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";
 import { FaGithub } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
-import { ThumbsUp } from "lucide-react";
-import { Code } from "lucide-react";
-import { CodeXml } from "lucide-react";
-
 import { Typewriter } from "../app/components/Typewriter";
-
 import React from "react";
-
-import { delay, motion } from "framer-motion";
-import HtmlRenderer from "@/utils";
-import { text } from "stream/consumers";
+import { motion } from "framer-motion";
+import AppCard from "./components/card";
+import CardMusic from "./components/card";
 
 export default function HomePage() {
   return (
@@ -93,6 +86,7 @@ export default function HomePage() {
           {/* Imagem */}
           <div className="">
             <Image
+              isBlurred
               alt="NextUI hero Image"
               src="/image/avatar.png"
               height={350}
@@ -243,13 +237,13 @@ export default function HomePage() {
                   <p className="text-lg text-yellow-300">intermediario</p>
                 </motion.div>
               </motion.div>
-              <motion.div className="w-full">
+              <motion.div className="w-full h-56">
                 <Image
                   alt="foco"
                   src={"/image/computador.png"}
-                  height={900}
-                  width={900}
-                  className="flex  h-96 flex-col  w-96 "
+                  height={500}
+                  width={600}
+                  className="flex  h-auto   w-[600px] "
                 />
               </motion.div>
 
@@ -430,54 +424,11 @@ export default function HomePage() {
             <h1 className=" flex relative top-3 left-3 pb-10 text-blue-500">
               PROCESSO DE TRABALHO
             </h1>
-            <div className="flex flex-row gap-4">
-              <div className=" w-full flex flex-col items-end  text-black">
-                <div className="flex flex-row">
-                  <p className="w-[80px] h-[80px] bg-white "></p>
-                </div>
-                <div className="flex flex-row">
-                  <p className="w-[80px] h-[80px]   bg-white"></p>
-                  <p
-                    id="tranparente"
-                    className="w-[80px] h-[80px]  bg-transparent"
-                  ></p>
-                </div>
-                <div className="flex flex-row">
-                  <p className="w-[80px] h-[80px]  bg-white"></p>
-                  <p
-                    id="tranparente"
-                    className="w-[160px] h-[80px]  bg-transparent"
-                  ></p>
-                </div>
-                <div className="flex flex-row">
-                  <p className="w-[80px] h-[80px]  bg-white"></p>
-                  <p
-                    id="tranparente"
-                    className="w-[240px] h-[80px]  bg-transparent"
-                  ></p>
-                </div>
-                <div className="flex flex-row">
-                  <p className="w-[80px] h-[80px]   bg-white"></p>
-                  <p
-                    id="tranparente"
-                    className="w-[320px] h-[80px]  bg-transparent"
-                  ></p>
-                </div>
-                <div className="flex flex-row hover:bg-black">
-                  <p className="w-[80px] h-[80px] hover:w-[80px]  bg-white"></p>
-                  <p
-                    id="tranparente"
-                    className="w-[400px] h-[80px]  bg-transparent"
-                  ></p>
-                </div>
-              </div>
-              <div className="flex flex-col gap-y-12 w-full  text-transparent">
-                <p>06. Lançamento</p>
-                <p>05. Revisão</p>
-                <p>04. Desenvolvimento</p>
-                <p>03. Design</p>
-                <p>02. Modelagem</p>
-                <p>01. Ideia</p>
+
+            <div className="flex flex-col justify-end pb-10 gap-6 w-full h-full     ">
+              {/* ROW 1 */}
+              <div className="flex flex-col w-full gap-12">
+                <CardMusic />
               </div>
             </div>
           </div>
