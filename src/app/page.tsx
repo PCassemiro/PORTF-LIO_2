@@ -11,8 +11,8 @@ import { FaFacebook } from "react-icons/fa";
 import { Typewriter } from "../app/components/Typewriter";
 import React from "react";
 import { motion } from "framer-motion";
-import AppCard from "./components/card";
-import CardMusic from "./components/card";
+import CardMusic from "./components/cardes/cardMusica";
+import CardProcess from "./components/cardes/cardProcesso";
 
 export default function HomePage() {
   return (
@@ -86,7 +86,7 @@ export default function HomePage() {
           {/* Imagem */}
           <div className="">
             <Image
-              isBlurred
+              /*isBlurred */
               alt="NextUI hero Image"
               src="/image/avatar.png"
               height={350}
@@ -420,13 +420,27 @@ export default function HomePage() {
           id="section7"
           className="h-screen snap-start flex  text-white text-3xl"
         >
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full">
             <h1 className=" flex relative top-3 left-3 pb-10 text-blue-500">
               PROCESSO DE TRABALHO
             </h1>
 
-            <div className="flex flex-col justify-end pb-10 gap-6 w-full h-full     ">
-              {/* ROW 1 */}
+            <div className="flex flex-col justify-center pb-10 gap-6 w-full h-full     ">
+              <div className="flex flex-col justify-items-center  ">
+                {/* ROW 1 */}
+                <div className="flex flex-row justify-between my-8">
+                  <CardProcess titulo="1. Ideia" imagem="ui" />
+                  <CardProcess titulo="2. Modelagem" imagem="ui" />
+                  <CardProcess titulo="3. Design" imagem="ui" />
+                </div>
+                {/* ROW 2 */}
+                <div className="flex flex-row justify-between">
+                  <CardProcess titulo="4. Desenvolvimento" imagem="ui" />
+                  <CardProcess titulo="5. Revisão" imagem="ui" />
+                  <CardProcess titulo="6. Conclusão" imagem="ui" />
+                </div>
+              </div>
+              {/* musica */}
               <div className="flex flex-col w-full gap-12">
                 <CardMusic />
               </div>
