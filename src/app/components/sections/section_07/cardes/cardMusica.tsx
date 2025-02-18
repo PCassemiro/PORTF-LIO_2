@@ -209,7 +209,7 @@ export default function CardMusic() {
               className="object-cover"
               height={200}
               shadow="md"
-              src={"/image/avatarMusica.png"}
+              src={"/image/avatar/avatarMusica.png"}
               width="100%"
             />
           </div>
