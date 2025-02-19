@@ -5,12 +5,12 @@ export default function ComponentSection02() {
       className="h-screen snap-start flex flex-cols   text-white text-3xl"
     >
       {/* geral */}
-      <div className="px-5 pt-5">
-        <div>
-          <h1 className=" flex relative top-3 left-3 pb-16    text-blue-500">
-            QUEM SOU EU
-          </h1>
-        </div>
+
+      <div>
+        <h1 className=" flex relative top-3 left-3 pb-16 text-blue-500">
+          QUEM SOU EU
+        </h1>
+
         {/* Geral */}
         <div className="grid grid-cols-2">
           {/* Texto */}

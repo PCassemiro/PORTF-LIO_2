@@ -26,16 +26,13 @@ const experiences: Experience[] = [
 
 export function ComponentSection05() {
   return (
-    <section id="section5" className="min-h-screen snap-start py-16 ">
+    <section id="section5" className="h-screen snap-start ">
       <div className="container mx-auto px-4">
-        <motion.h2
-          className="text-3xl md:text-4xl font-bold text-blue-500 mb-12"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          EXPERIÊNCIAS
-        </motion.h2>
+        <div>
+          <h1 className=" flex relative top-3 left-3 pb-16 text-blue-500 text-3xl">
+            EXPERIÊNCIA
+          </h1>
+        </div>
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <motion.div
