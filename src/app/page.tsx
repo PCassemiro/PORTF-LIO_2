@@ -29,6 +29,7 @@ export default function HomePage() {
         <ComponentSection03 />
         {/*04.Curiosidades */}
         <ComponentSection04 />
+        {/*otimizar o código */}
         {/*05.Experiencia */}
         <ComponentSection05 />
         {/*06.Projetos */}
