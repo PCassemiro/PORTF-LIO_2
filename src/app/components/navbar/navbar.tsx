@@ -4,7 +4,7 @@ export default function ComponentNavbar() {
   return (
     <div>
       <Link href="#section1">
-        <Button className="bg-transparent text-white ">01.Topo</Button>
+        <Button className="bg-transparent text-white ">01. Topo</Button>
       </Link>
       <Link href="#section2">
         <Button className="bg-transparent text-white ">02. Quem sou eu</Button>

@@ -193,7 +193,6 @@ export default function CardMusic() {
         setTempoAtual(tempoAtual + 1);
       }, 50); // Simula 50ms por arquivo
     }
-    console.log(tempoAtual);
   }, [tempoAtual, duracaoMusica]);
   return (
     <Card

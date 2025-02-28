@@ -9,7 +9,7 @@ export default function ComponentSection01() {
     >
       {/* Apresentação */}
       <div className=" px-5 pt-5">
-        <p className="text-2xl">Ola, sou</p>
+        <p className="text-2xl">Olá, sou</p>
 
         <div className="text-9xl">
           <Typewriter text={"Pedro de Oliveira Cassemiro"} />

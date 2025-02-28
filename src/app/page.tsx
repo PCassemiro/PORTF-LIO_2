@@ -1,11 +1,12 @@
 "use client";
 
 import React from "react";
-import { ComponentSection05 } from "./components/sections/section_05/section05";
+
 import ComponentSection01 from "./components/sections/section_01/section01";
 import ComponentSection02 from "./components/sections/section_02/section02";
 import ComponentSection03 from "./components/sections/section_03/section03";
 import ComponentSection04 from "./components/sections/section_04/section04";
+import { ComponentSection05 } from "./components/sections/section_05/section05";
 import ComponentSection06 from "./components/sections/section_06/section06";
 import ComponentSection07 from "./components/sections/section_07/section07";
 import ComponentSection08 from "./components/sections/section_08/section08";
