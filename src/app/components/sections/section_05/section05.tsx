@@ -27,12 +27,11 @@ const experiences: Experience[] = [
 export function ComponentSection05() {
   return (
     <section id="section5" className="h-screen snap-start ">
-      <div className="container mx-auto px-4">
-        <div>
-          <h1 className=" flex relative top-3 left-3 pb-16 text-blue-500 text-3xl">
-            EXPERIÊNCIA
-          </h1>
-        </div>
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-blue-500 mb-8 border-b border-blue-500 pb-2 inline-block">
+          EXPERIÊNCIA
+        </h1>
+
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <motion.div

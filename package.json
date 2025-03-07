@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@fontsource/montserrat": "^5.1.1",
+    "@heroui/accordion": "^2.2.12",
     "@heroui/button": "^2.2.13",
     "@heroui/image": "^2.2.6",
+    "@heroui/input-otp": "^2.1.14",
     "@nextui-org/image": "^2.2.5",
     "@nextui-org/react": "^2.6.11",
     "@nextui-org/system": "^2.4.6",

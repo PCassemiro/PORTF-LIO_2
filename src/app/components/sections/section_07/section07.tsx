@@ -7,8 +7,8 @@ export default function ComponentSection07() {
       id="section7"
       className="h-screen snap-start flex  text-white text-3xl"
     >
-      <div className="flex flex-col w-full">
-        <h1 className=" flex relative top-3 left-3 pb-10 text-blue-500">
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-blue-500 mb-8 border-b border-blue-500 pb-2 inline-block">
           PROCESSO DE TRABALHO
         </h1>
 
