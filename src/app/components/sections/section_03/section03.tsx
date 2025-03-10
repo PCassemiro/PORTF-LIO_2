@@ -1,5 +1,5 @@
 "use client";
-
+import { FaPython } from "react-icons/fa";
 import { Image } from "@heroui/image";
 import { motion } from "framer-motion";
 import { Code, CodeXml, CheckCircle2 } from "lucide-react";
@@ -183,14 +183,8 @@ export default function SkillsSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="relative rounded-lg overflow-hidden border border-gray-700 shadow-xl">
-              <Image
-                alt="Gráfico de habilidades"
-                src="/image/grafico.jpg"
-                height={500}
-                width={500}
-                className="w-full h-auto object-cover"
-              />
+            <div className="relative rounded-lg overflow-hidden border border-gray-700 shadow-xl flex justify-center items-center">
+              <FaPython className="w-[500px] h-[500px] object-cover p-20 " />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
             </div>
           </motion.div>
