@@ -28,7 +28,7 @@ export default function ComponentSection01() {
           src="/image/avatar/avatar.png"
           height={350}
           width={650}
-          className="bg-white rounded-full border-gray-100 border-2"
+          className="bg-white rounded-full border-gray-100 border-3"
         />
       </div>
     </section>

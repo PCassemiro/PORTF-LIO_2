@@ -1,6 +1,5 @@
 "use client";
 import { FaPython } from "react-icons/fa";
-import { Image } from "@heroui/image";
 import { motion } from "framer-motion";
 import { Code, CodeXml, CheckCircle2 } from "lucide-react";
 
@@ -34,7 +33,7 @@ export default function SkillsSection() {
       name: "JavaScript/TypeScript",
       level: "intermediário",
       icon: "code",
-      color: "text-yellow-300",
+      color: "text-warning",
       percentage: 65,
     },
   ];

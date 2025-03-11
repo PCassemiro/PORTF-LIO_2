@@ -21,7 +21,7 @@ export default function HomePage() {
         <ComponentNavbar />
       </div>
       {/* Geral sections */}
-      <div className="container mx-auto pr-60 px-5">
+      <div className="container mx-auto pr-60 px-5 ">
         {/* 01.Nome */}
         <ComponentSection01 />
         {/* 02.Quem sou eu */}
