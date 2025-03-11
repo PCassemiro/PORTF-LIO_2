@@ -43,7 +43,7 @@ export default function ComponentSection02() {
             </p>
           </div>
           {/* Geral direita */}
-          <div className=" mx-36 flex flex-col justify-center h-full ">
+          <div className=" mx-36 flex flex-col justify-center h-96 w-96 border-3 border-blue-500 rounded-full shadow-lg ">
             <div className="text-[200px] font-bold text-blue-500 opacity-20 flex justify-center relative ">
               1
             </div>
